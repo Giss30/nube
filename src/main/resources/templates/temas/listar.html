@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<title>Temas del Foro</title> 
+	<title>Libros de la biblioteca</title> 
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
 	integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<div class="jumbotron">
-			<h1 class="display-4">Temas del Foro</h1>
+			<h1 class="display-4">Libros de la biblioteca</h1>
 			<p th:text="*{mensaje}" class="lead"></p>
 			<hr class="my-4">
 			<div th:replace="fragmentos :: navbar"></div>
@@ -44,12 +44,12 @@
 				<div class="col-6">
 					<form action="#" th:action="@{/temas/agregar}" th:object="${tema}" method="post">
 						<fieldset>
-						<legend>Agregue un nuevo tema</legend>
-						<label>Titulo del tema: </label>
+						<legend>Agregue un nuevo Libro</legend>
+						<label>Titulo del Libro: </label>
 						<input type="text" required="required" th:field="*{titulo}"
 							class="form-control" placeholder="P.e. MVC en Spring"
 							maxlength="60" />
-						<label>Descripción: </label>
+						<label>Descripción del libro: </label>
 						<textarea rows="4" cols="50" required="required" th:field="*{descripcion}"
 							class="form-control" placeholder="Máximo 200 caractres."
 							maxlength="200"></textarea>
@@ -68,7 +68,7 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-8">
-				<label>Saúl Hernández Cortes </label> <br> <label>173100307</label>
+				<label>Equipo Saúl & Giselle </label> <br> <label>173100307 & 173100300</label>
 					
 				</div>
 			<div class="col-2"></div>
